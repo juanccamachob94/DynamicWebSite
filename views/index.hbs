@@ -1,0 +1,5 @@
+{{#each modulesDataList}}
+  <section id="{{module_slug (modulePath)}}-module" class="module">
+    {{> (modulePath) data=data }}
+  </section>
+{{/each}}

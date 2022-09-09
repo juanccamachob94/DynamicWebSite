@@ -1,0 +1,24 @@
+#shortcuts-module {
+  margin: 10px;
+
+  .container-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px auto;
+  }
+
+  .icon-m1 {
+    align-items: center;
+    display: inherit;
+    margin: 2px;
+    padding: 2px;
+    width: 23.5%;
+  }
+
+  .img-icon-m1 {
+    margin: 20px auto;
+    width: 55px;
+  }
+}
