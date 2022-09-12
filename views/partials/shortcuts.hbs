@@ -1,48 +1,8 @@
 <h2>{{data.structure.title}}</h2>
 <div class="container-icon">
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-vivo.png"
-      class="img-icon-m1" href="www.google.com">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-wifi.png"
-      class="img-icon-m1">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-noticias.png"
-      class="img-icon-m1">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-juegos.png"
-      class="img-icon-m1">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-musica.png"
-      class="img-icon-m1">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-podcast.png"
-      class="img-icon-m1">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-red-social.png"
-      class="img-icon-m1">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-peliculas.png"
-      class="img-icon-m1">
-  </a>
-  <a class="icon-m1" href="https://www.google.com/">
-    <img
-      src="https://raw.githubusercontent.com/JonathanACG/SuperApp-front-end/main/assets/modulo1/img/iconos-gird/icono-wifi.png"
-      class="img-icon-m1">
-  </a>
+  {{#each data.content.shortcuts}}
+    <a class="icon-m1" href="app:shortcuts/{{this.slug}}">
+      <img src="{{imageUrl}}" class="img-icon-m1" href="app:shortcuts/{{this.slug}}" />
+    </a>
+  {{/each}}
 </div>
