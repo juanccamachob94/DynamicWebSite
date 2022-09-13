@@ -1,5 +1,11 @@
 const JsonUrlReader = require('../services/json_url_reader');
 
+let buildContentData = async(baseDataUrl) => {
+  if(baseDataUrl == undefined)
+    return undefined;
+  return await JsonUrlReader.perform(baseDataUrl);
+}
+
 module.exports = {
   perform: async(webSiteUrl) => {
     if(webSiteUrl == undefined)
@@ -13,7 +19,7 @@ module.exports = {
             return {
               modulePath: () => module.modulePath,
               data: {
-                content: (await JsonUrlReader.perform(module.baseDataUrl)),
+                content: (await buildContentData(module.baseDataUrl)),
                 structure: {
                   more: module.more,
                   title: module.title
@@ -25,7 +31,7 @@ module.exports = {
           }
         })
       )
-    ).filter(module => Object.entries(module).lenght != 0);
+    ).filter(module => Object.entries(module).length != 0);
     } catch(e) {
       return [];
     }
