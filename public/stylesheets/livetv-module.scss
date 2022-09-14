@@ -1,0 +1,267 @@
+#livetv-module {
+  margin-top: 10px;
+  overflow: hidden;
+
+  .livetv-title {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+
+    .fa-circle {
+      background: -webkit-gradient(linear, left top, left bottom, from(#ff4040), to(#cc0000));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      margin-right: 5px;
+    }
+  }
+
+  .wrap {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media screen and (min-width: 1450px) {
+    .wrap {
+      left: -48vw;
+      width: 190vw;
+    }
+
+    .slider-container {
+      .play-tv-button {
+        font-size: 210px;
+        left: 43%;
+        position: absolute;
+        top: 38%;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 1449px) {
+    .wrap {
+      left: -45vw;
+      width: 185vw;
+    }
+
+    .slider-container {
+      .play-tv-button {
+        font-size: 200px;
+        left: 43%;
+        position: absolute;
+        top: 38%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1230px) {
+    .slider-container {
+      .play-tv-button {
+        font-size: 180px;
+        left: 43%;
+        position: absolute;
+        top: 38%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 999px) {
+    .wrap {
+      left: -45vw;
+      width: 180vw;
+    }
+
+    .slider-container {
+      .play-tv-button {
+        font-size: 130px;
+        left: 42%;
+        position: absolute;
+        top: 35%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 745px) {
+    .slider-container {
+      .play-tv-button {
+        font-size: 110px;
+        left: 43%;
+        position: absolute;
+        top: 35%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 695px) {
+    .wrap {
+      left: -44vw;
+      width: 180vw;
+    }
+
+    .slider-container {
+      .play-tv-button {
+        font-size: 90px;
+        left: 42%;
+        position: absolute;
+        top: 38%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    .slider-container {
+      .play-tv-button {
+        font-size: 80px;
+        left: 42%;
+        position: absolute;
+        top: 38%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .wrap {
+      left: -43vw;
+      width: 175vw;
+    }
+
+    .slider-container {
+      .play-tv-button {
+        font-size: 70px;
+        left: 42%;
+        position: absolute;
+        top: 35%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .slider-container {
+      .play-tv-button {
+        font-size: 50px;
+        left: 42%;
+        position: absolute;
+        top: 35%;
+      }
+    }
+  }
+
+  .glide__slide {
+    margin: 0;
+    padding: 1px 0 0 0;
+    text-align: center;
+  }
+
+  .slider-container {
+    position: relative;
+
+    img {
+      &.section-image {
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        width: 100%;
+      }
+    }
+
+    .section-empty-image {
+      background-color: #000;
+      border-radius: 10px;
+    }
+
+    .play-tv-button {
+      background-color: #fff;
+      border: solid 3px #cef46d;
+      border-radius: 50%;
+      color: #00c22b;
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .play-tv-button:active {
+      background-color: #ff009d;
+      border: solid 3px #00c22b;
+      color: #cef46d;
+    }
+
+    .section-title {
+      bottom: 0;
+      color: #fff;
+      font-size: 11pt;
+      font-weight: 900;
+      left: 0;
+      margin: 0 0 15pt 10pt;
+      padding: 0;
+      position: absolute;
+      text-shadow: 2px 2px black;
+    }
+
+    .live-sign {
+      background-color: #00c22b;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 10pt;
+      margin: 10px 15px 0 0;
+      padding: 7px 12px;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      span {
+        margin-right: 12px;
+      }
+
+      .fa-circle {
+        color: #fff;
+      }
+    }
+  }
+
+  .tv-buttons-container {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+  }
+
+  .tv-button {
+    border: 1px solid #fefefe;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin: 0;
+    padding: 0; 
+    position: relative;
+    width: 100px;
+
+    img {
+      height: 38px;
+      margin: -5px 0 0 0;
+      width: 38px;
+    }
+
+    &.disabled {
+      background-color: #f8f8f8;
+      img {
+        opacity: 0.2;
+      }
+    }
+
+    &:active {
+      background-color: #f6ccef;
+    }
+  }
+
+  .more-button {
+    background-color: #f6ccef;
+    font-size: 14px;
+    font-weight: 900;
+
+    &:active {
+      background-color: #d0519a;
+    }
+
+    a {
+      color: #000;
+    }
+  }
+}

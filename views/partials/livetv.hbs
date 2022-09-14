@@ -1,0 +1,9 @@
+<p class="livetv-title title-section"><i class="fa fa-duotone fa-circle"></i>{{data.structure.title}}</p>
+{{> livetv/slider data=data}}
+{{> livetv/buttons data=data}}
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    new LivetvModule();
+  });
+</script>

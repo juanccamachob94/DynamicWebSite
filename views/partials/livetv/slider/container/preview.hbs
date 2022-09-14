@@ -1,0 +1,11 @@
+<div id="slider-container-preview-{{transmission.videos.id}}" class="slider-container preview" data-slider-index="{{sliderIndex}}">
+  {{#if transmission.urlImagen}}
+    <img class="section-image" alt="{{transmission.nombre}}" src="{{transmission.urlImagen}}" />
+  {{else}}
+    <div class="section-empty-image"></div>
+  {{/if}}
+
+  <i class="play-tv-button fa fa-play-circle fa-5x" aria-hidden="true" data-mdstrm-identifier="{{transmission.videos.id}}"></i>
+  <p class="section-title">{{incompleteString transmission.nombre 30}}</p>
+  <div class="live-sign"><span>En Vivo</span><i class="fa fa-duotone fa-circle fa-xs"></i></div>
+</div>

@@ -1,0 +1,12 @@
+<div class="tv-buttons-container">
+  {{#each (limit data.content.canales 6)}}
+    {{#if (not (includes this.nombre 'baz'))}}
+      <button class="tv-button {{#if (not (hasDirectaTransmission this.transmisiones))}}disabled{{/if}}" type="button" data-mdstrm-identifier="{{firstTransmisionMediastreamId this.transmisiones}}">
+        <img src="{{miniLogo}}"/>
+      </button>
+    {{/if}}
+  {{/each}}
+  {{#if data.structure.more}}
+    <button class="tv-button more-button" type="button"><a href="app:videoondemand/dashboard">{{data.structure.more}}</a></button>
+  {{/if}}
+</div>

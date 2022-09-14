@@ -1,0 +1,23 @@
+<div class="tv-slider wrap">
+  <div class="main-glide glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        {{setVar 'sliderIndex' 0}}
+        {{#each (limit data.content.canales 6)}}
+          {{#if (not (includes this.nombre 'baz'))}}
+            {{setVar 'directaFounded' false}}
+            {{#each this.transmisiones}}
+              {{#if (and (equals this.directa true) (equals @root.directaFounded false))}}
+                <li class="glide__slide">
+                  {{> livetv/slider/container transmission=this sliderIndex=@root.sliderIndex}}
+                </li>
+                {{setVar 'sliderIndex' (increment @root.sliderIndex)}}
+                {{setVar 'directaFounded' true}}
+              {{/if}}
+            {{/each}}
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
