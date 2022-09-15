@@ -1,0 +1,114 @@
+#articles-module {
+
+    .container-news {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        position: relative;
+    }
+
+    .container-news-first{
+        display: grid;
+        grid-auto-flow: column;
+        overflow: auto;
+    }
+    
+    .tabs-video {
+        border-radius: 15px;
+        color: #d0519a !important;
+        margin: 2px 5px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        width: 110px;
+        text-align: center;
+    }
+
+    .tv-active {
+        background: #f6ccef;
+    }
+
+    .main-news{
+        background: #FFF;
+        border-radius: 15px;
+    }
+
+    .cont-main-news {
+        display: inherit;
+        margin: 4px;
+        padding: 4px;
+        width: 95%;
+    }
+    
+    .img-news{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .conteiner-seconds{
+        display: inherit;
+        font-size: 12px;
+        color: black;
+        width: 75%;
+        flex-direction: column;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .img-news-seconds{
+        border-radius: 10px;
+        width: 25%;
+    }
+
+    .text-bottom{
+        position: absolute;
+        bottom: 10PX;
+        left: 10px;
+        color: #FFF;
+        width: 80%;
+        font-size: small;
+        font-weight: bold;
+        margin: 5px;
+    }
+
+    .text-cat{
+        color: #a4a5af;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: -0.5px;
+    }
+
+    .text-desc{
+        color: #87898b;
+        margin-top: 5px;
+        font-size: 12px;
+        letter-spacing: -0.5px;
+        font-weight: bold;
+        overflow: hidden;
+        height: 32px;
+        padding: 1px;
+    }
+
+    .text-date{
+        color: #a4a5af;
+        font-weight: normal;
+        margin-top: 8px;
+        font-size: 11px;
+        letter-spacing: -0.5px;
+    }
+
+    .button-morenews{
+        background: #242d42;
+        color: white;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 50px auto;
+        width: 180px;
+        border-radius: 25px;
+        font-size: 14px;
+        letter-spacing: -0.5px;
+    }
+    
+}
