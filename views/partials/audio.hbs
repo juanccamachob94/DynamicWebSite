@@ -1,0 +1,21 @@
+<p class="title-section">{{data.structure.title}}</p>
+    {{#each (limit data.content.data 2) }}
+        {{#each (limit data 1) }}
+            <span class="subtitle-section">{{subcategory}}</span>
+            <div class="container-slider-playlists">
+                {{#each (limit data 6) }}
+                    <div class="container-playlist">
+                        <div  class="img-playlist" href="app:playlists/{{id}}" >
+                            <img src="{{thumbnail_image_url}}" />
+                        </div>
+                        <div class="title-playlist">
+                            <span> {{name}}</span>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        {{/each}}
+    {{/each}}
+<a href="https://www.google.com/"><div class="center-button">
+    {{data.structure.more}}
+</div></a>
