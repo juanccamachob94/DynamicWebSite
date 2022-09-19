@@ -24,3 +24,16 @@ a{
 .hidden {
   display: none;
 }
+
+.center-button{
+  background: #242d42;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 50px auto;
+  width: 180px;
+  border-radius: 25px;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+}
